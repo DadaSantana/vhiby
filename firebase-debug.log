@@ -1,0 +1,28 @@
+[debug] [2023-11-15T15:22:19.397Z] ----------------------------------------------------------------------
+[debug] [2023-11-15T15:22:19.400Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\assit\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-11-15T15:22:19.401Z] CLI Version:   11.13.0
+[debug] [2023-11-15T15:22:19.402Z] Platform:      win32
+[debug] [2023-11-15T15:22:19.402Z] Node Version:  v18.18.0
+[debug] [2023-11-15T15:22:19.404Z] Time:          Wed Nov 15 2023 12:22:19 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2023-11-15T15:22:19.404Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-15T15:22:19.568Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-15T15:22:19.569Z] > authorizing via signed-in user (vhibycompany@gmail.com)
+[debug] [2023-11-15T15:22:19.569Z] [iam] checking project vhiby-company for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-15T15:22:19.575Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vhiby-company:testIamPermissions [none]
+[debug] [2023-11-15T15:22:19.576Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vhiby-company:testIamPermissions x-goog-quota-user=projects/vhiby-company
+[debug] [2023-11-15T15:22:19.576Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vhiby-company:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-15T15:22:20.724Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vhiby-company:testIamPermissions 200
+[debug] [2023-11-15T15:22:20.725Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vhiby-company:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-15T15:22:20.727Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vhiby-company [none]
+[debug] [2023-11-15T15:22:21.146Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vhiby-company 200
+[debug] [2023-11-15T15:22:21.147Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vhiby-company {"projectId":"vhiby-company","projectNumber":"570815674705","displayName":"Vhiby Company","name":"projects/vhiby-company","resources":{"hostingSite":"vhiby-company"},"state":"ACTIVE","etag":"1_d92e2b52-177a-45f5-981c-5ce50cddf22d"}
+[debug] [2023-11-15T15:22:27.487Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/vhiby-company/sites pageToken=&pageSize=10
+[debug] [2023-11-15T15:22:28.932Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/vhiby-company/sites 200
+[debug] [2023-11-15T15:22:28.932Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/vhiby-company/sites {"sites":[{"name":"projects/vhiby-company/sites/vhiby-company","defaultUrl":"https://vhiby-company.web.app","appId":"1:570815674705:web:14142384109109d58e7b70","type":"DEFAULT_SITE"}]}
+[debug] [2023-11-15T15:22:28.933Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:570815674705:web:14142384109109d58e7b70/config [none]
+[debug] [2023-11-15T15:22:29.749Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:570815674705:web:14142384109109d58e7b70/config 200
+[debug] [2023-11-15T15:22:29.750Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:570815674705:web:14142384109109d58e7b70/config {"projectId":"vhiby-company","appId":"1:570815674705:web:14142384109109d58e7b70","storageBucket":"vhiby-company.appspot.com","apiKey":"AIzaSyCiesuUN1MMGTEqlRkBF07mtCf2eiHmhJY","authDomain":"vhiby-company.firebaseapp.com","messagingSenderId":"570815674705","measurementId":"G-JQJXF26WFL"}
+[debug] [2023-11-15T15:30:04.989Z] Error: ENOENT: no such file or directory, copyfile 'C:\PROJETOS\vhiby\.next\server\pages\favicon.ico.html' -> 'C:\PROJETOS\vhiby\.firebase\vhiby-company\hosting\favicon.ico.html'
+[error] 
+[error] Error: An unexpected error has occurred.
