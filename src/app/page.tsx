@@ -1,7 +1,8 @@
 'use client'
 import Image from 'next/image';
+import Landing from '../../public/images/bg-landing.png';
 import { Container } from "@mui/material";
-import logomarca from '../../public/images/Vhiby_Logo.png';
+
 
 import { motion } from "framer-motion";
 import InfoSlide from '@/components/InfoSlide';
@@ -18,22 +19,54 @@ export default function Home() {
     },
   }
   return (
-    <main className="home fixed w-screen h-screen flex flex-col flex-1 py-10 overflow-auto">
-      <Container className="flex flex-col">
-        <header className='w-full flex justify-between items-center'>
-          <Image className='h-12 object-contain w-fit' src={logomarca} alt='' />
-        </header>
-        <motion.h1
-          className="welcome text-6xl font-bold text-center mb-5"
-          initial={{ opacity: 0, translateY: '10px' }}
-          animate={{ opacity: 1, translateY: '0px' }}
-          transition={{ duration: 0.5, delay: 0.5 }}          
-        >
-          Desenvolvimento Web<br/>Profissional ao seu Alcance
-        </motion.h1>
-        <InfoSlide />
-      </Container>
-
+    <main className='home flex flex-col w-screen h-screen'>
+      <section className='flex h-5/6 w-screen object-cover pt-20 px-7 shadow-xl mb-7 border-b-4 border-main-blue' style={{ background: `url('/images/bg-main.png') center center / cover no-repeat` }}>
+        <div className='flex flex-col w-1/2 h-full justify-center'>
+          <motion.h1
+            className="welcome text-5xl font-bold text-left mb-5 text-white"
+            initial={{ opacity: 0, translateY: '10px' }}
+            animate={{ opacity: 1, translateY: '0px' }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            Desenvolvimento Web<br />Profissional ao seu Alcance
+          </motion.h1>
+          <motion.p
+            className="text-xl text-justify mb-5 text-white"
+            initial={{ opacity: 0, translateY: '10px' }}
+            animate={{ opacity: 1, translateY: '0px' }}
+            transition={{ duration: 0.5, delay: 1 }}
+          >
+            Bem-vindo à Vhiby!
+          </motion.p>
+          <motion.p
+            className="text-xl text-justify mb-5 text-white"
+            initial={{ opacity: 0, translateY: '10px' }}
+            animate={{ opacity: 1, translateY: '0px' }}
+            transition={{ duration: 0.5, delay: 1.5 }}
+          >
+            Oferecemos soluções de <mark className='bg-main-blue px-1 font-semibold text-skin '>desenvolvimento web de alta</mark> qualidade e acessíveis para atender às suas necessidades.
+          </motion.p>
+          <motion.p
+            className="text-xl text-justify mb-5 text-white"
+            initial={{ opacity: 0, translateY: '10px' }}
+            animate={{ opacity: 1, translateY: '0px' }}
+            transition={{ duration: 0.5, delay: 2 }}
+          >
+            Se você está procurando <mark className='bg-main-blue px-1 font-semibold text-skin '>criar uma presença online impressionante</mark> para o seu negócio, está no lugar certo!
+          </motion.p>
+          <motion.span
+            className='px-10 py-3 bg-light-blue rounded-full w-fit font-bold cursor-pointer self-center mt-5'
+            initial={{ opacity: 0, translateY: '10px' }}
+            animate={{ opacity: 1, translateY: '0px' }}
+            transition={{ duration: 0.5, delay: 2.5 }}
+          >
+            📃 Solicitar Orçamento!
+          </motion.span>
+        </div>
+      </section>
+      <section className='flex flex-col px-7'>
+        <h1 className='welcome text-center text-3xl'>Conheça nossos produtos</h1>
+      </section>
     </main>
   )
 }

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import logomarca from '../../public/images/Vhiby_Logo_Lite_Version.png';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,8 +18,11 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <html lang='pt-br'>
-      <body className='flex flex-col w-screen h-screen' style={{ background: 'url("/images/bg-body-magenta.jpg") center center / cover no-repeat' }}>
-        {children}
+      <body className='flex flex-col w-screen h-screen'>
+        <header className='fixed w-full flex justify-between items-center bg-main-blue py-5 px-7'>
+          <Image className='h-10 object-contain w-fit' src={logomarca} alt='' />
+        </header>
+        {children}  
       </body>
     </html>
   )

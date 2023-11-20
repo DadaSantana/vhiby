@@ -13,6 +13,21 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      backgroundColor: {
+        'main-blue': 'rgba(45, 37, 61, 0.95)',
+        'light-blue': '#3BBCD9',
+        'skin': '#F2C3A7',
+      },
+      colors: {
+        'main-blue': 'rgba(45, 37, 61, 1)',
+        'light-blue': '#3BBCD9',
+        'skin': '#F2C3A7',
+      },
+      borderColor: {
+        'main-blue': 'rgba(45, 37, 61, 1)',
+        'light-blue': '#3BBCD9',
+        'skin': '#F2C3A7',
+      }
     },
   },
   plugins: [],

@@ -16,4 +16,5 @@ main.home section .info {
 }
 main.home section p {
   font-family: 'Raleway', sans-serif;
+  margin-bottom: 2px;
 }
