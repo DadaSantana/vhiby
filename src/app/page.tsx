@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import Landing from '../../public/images/bg-landing.png';
+import Landing from '../../public/images/bg-main.jpg';
 import { Container } from "@mui/material";
 
 
@@ -20,7 +20,7 @@ export default function Home() {
   }
   return (
     <main className='home flex flex-col w-screen h-screen'>
-      <section className='flex h-5/6 w-screen object-cover pt-20 px-7 shadow-xl mb-7 border-b-4 border-main-blue' style={{ background: `url('/images/bg-main.png') center center / cover no-repeat` }}>
+      <section className='flex h-5/6 w-screen object-cover pt-20 px-7 shadow-xl mb-7 border-b-4' style={{ background: `url('/images/bg-artwork.png') left center / cover no-repeat` }}>
         <div className='flex flex-col w-1/2 h-full justify-center'>
           <motion.h1
             className="welcome text-5xl font-bold text-left mb-5 text-white"
@@ -55,12 +55,12 @@ export default function Home() {
             Se você está procurando <mark className='bg-main-blue px-1 font-semibold text-skin '>criar uma presença online impressionante</mark> para o seu negócio, está no lugar certo!
           </motion.p>
           <motion.span
-            className='px-10 py-3 bg-light-blue rounded-full w-fit font-bold cursor-pointer self-center mt-5'
+            className='px-10 py-3 bg-light-blue rounded-full w-fit font-bold cursor-pointer self-center mt-10 hover:bg-cyan-900 transition ease-in-out duration-200 hover:text-white'
             initial={{ opacity: 0, translateY: '10px' }}
             animate={{ opacity: 1, translateY: '0px' }}
             transition={{ duration: 0.5, delay: 2.5 }}
           >
-            📃 Solicitar Orçamento!
+            📃 Planejar meu Sistema!
           </motion.span>
         </div>
       </section>

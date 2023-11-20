@@ -19,8 +19,13 @@ const Layout = ({ children }: Props) => {
   return (
     <html lang='pt-br'>
       <body className='flex flex-col w-screen h-screen'>
-        <header className='fixed w-full flex justify-between items-center bg-main-blue py-5 px-7'>
+        <header className='fixed w-full flex justify-between items-center py-5 px-7'>
           <Image className='h-10 object-contain w-fit' src={logomarca} alt='' />
+          <ul className='flex text-white font-semibold'>
+            <li className='cursor-pointer hover:text-pink-400 transition-all ease-in-out duration-200'>Catálogo</li>
+            <li className='cursor-pointer hover:text-pink-400 transition-all ease-in-out duration-200 mx-7'>Suporte</li>
+            <li className='cursor-pointer hover:text-pink-400 transition-all ease-in-out duration-200'>Contato</li>
+          </ul>
         </header>
         {children}  
       </body>
