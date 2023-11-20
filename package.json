@@ -16,10 +16,9 @@
     "firebase": "^10.6.0",
     "framer-motion": "^10.16.4",
     "next": "^13.4.7",
-    "node": "^21.1.0",
+    "node": "^20.9.0",
     "react": "^18",
-    "react-dom": "^18",
-    "sharp": "^0.32.6"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
