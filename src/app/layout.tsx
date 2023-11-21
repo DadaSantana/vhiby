@@ -7,7 +7,7 @@ import logomarca from '../../public/images/Vhiby_Logo_Lite_Version.png';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Vibhi Company',
+  title: 'Vibhy Company',
   description: 'Bem-vindo à Vhiby Company :D',
 }
 

@@ -18,3 +18,7 @@ main.home section p {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 2px;
 }
+
+main.home section.landing {
+  min-height: 80%;
+}

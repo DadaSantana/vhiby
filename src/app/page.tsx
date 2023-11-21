@@ -6,6 +6,7 @@ import { Container } from "@mui/material";
 
 import { motion } from "framer-motion";
 import InfoSlide from '@/components/InfoSlide';
+import Card from '@/components/Card';
 
 export default function Home() {
   const text = 'Desenvolvimento Web Profissional ao Seu Alcance';
@@ -20,7 +21,7 @@ export default function Home() {
   }
   return (
     <main className='home flex flex-col w-screen h-screen'>
-      <section className='flex h-5/6 w-screen object-cover pt-20 px-7 shadow-xl mb-7 border-b-4' style={{ background: `url('/images/bg-artwork.png') left center / cover no-repeat` }}>
+      <section className='landing flex w-screen object-cover pt-20 px-7 shadow-xl mb-7 border-b-4' style={{ background: `url('/images/bg-artwork.png') left center / cover no-repeat` }}>
         <div className='flex flex-col w-1/2 h-full justify-center'>
           <motion.h1
             className="welcome text-5xl font-bold text-left mb-5 text-white"
@@ -65,7 +66,21 @@ export default function Home() {
         </div>
       </section>
       <section className='flex flex-col px-7'>
-        <h1 className='welcome text-center text-3xl'>Conheça nossos produtos</h1>
+        <h1 className='welcome text-center text-3xl mb-7'>Conheça nossos produtos</h1>
+        <div className='flex w-full'>
+          <Card
+            src='/images/card-spreadsheet.jpg'
+            title='Transforme suas planilhas em sistema web!'
+          />
+          <Card
+            src='/images/card-spreadsheet.jpg'
+            title='Transforme suas planilhas em sistema web!'
+          />
+          <Card
+            src='/images/card-spreadsheet.jpg'
+            title='Transforme suas planilhas em sistema web!'
+          />
+        </div>/
       </section>
     </main>
   )
