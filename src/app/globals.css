@@ -4,12 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a3a3a3; 
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+
+
 h1.welcome, h3.welcome {
   font-family: 'Righteous', sans-serif;
 }
 
 main.home {
   background-color: rgba(255, 255, 255,0.9);
+  overflow-x: hidden;
 }
 main.home section .info {
   background-color: rgba(238, 238, 238, 0.606);
